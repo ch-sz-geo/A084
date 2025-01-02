@@ -6,15 +6,15 @@
 ====
 [cols="1, 3"]
 |=======
-|Erstelldatum | 2024-01-01
+|Erstelldatum | 2025-01-02
 |letzte Änderung | {docdate}
-| Themen-Nummer | Annn
-| ID nach kGeoiV | --- 
-| Beteiligte | Person 1 (Kürzel 1), Amt 1 + 
-Person 2 (Kürzel 2), Amt 2
-| Status a| - [ ] Entwurf 
+| Themen-Nummer | A084
+| ID nach kGeoiV | 69 
+| Beteiligte | Laura Lacher (LL), ARE + 
+Kuno Epper (Kep), AGI
+| Status a| - [x] Entwurf 
 - [ ] bereit für Vernehmlassung
-- [x] gültig
+- [ ] gültig
 |=======
 ====
 
