@@ -1,6 +1,22 @@
 == Modellbeschreibung
 
-<Beschreibung einfügen>
+Der kantonale Richtplan nach Art. 6 ff. des Raumplanungsgesetzes (RPG) ist das strategische und behördenverbindliche Führungs- und Steuerungsinstrument für die räumliche Entwicklung des Kantons. Er dient der langfristigen Lenkung der räumlichen Entwicklung und der Koordination sowie Abstimmung der raumwirksamen Tätigkeiten über alle Politik- und Sachbereiche hinweg.
+
+Inhaltlich deckt der Richtplan alle wesentlichen raumwirksamen Sachbereiche ab. Dazu gehören:
+
+* *Besiedlung:* Festlegung des Siedlungsgebiets, Siedlungsverdichtung und Siedlungsqualität, Zentrenstruktur, Entwicklungsschwerpunkte etc.
+*	*Verkehr:* Planung und Lenkung des Strassen- und Schienennetzes, Förderung des öffentlichen Verkehrs, Ausbau des Rad- und Fussverkehrs etc.
+*	*Natur und Landschaft:* Schutz von Natur- und Landschaftsräumen, Erhalt der Landwirtschaft, Wald, Gewässer etc. 
+*	*weitere Raumnutzungen:* Energie und Klima, Materialabbau, Deponien, Wasserversorgung und Siedlungsentwässerung etc.
+
+Der kantonale Richtplan besteht aus dem Richtplantext und der Richtplankarte, die gemäss Art. 6 Abs. 1 der https://www.fedlex.admin.ch/eli/cc/2000/310/de[Raumplanungsverordnung (RPV, SR 700.1)] miteinander verknüpft sind und sich gegenseitig ergänzen. Während der Richtplantext strategische Aussagen zur räumlichen Entwicklung, konkrete Festlegungen für die einzelnen Sachbereiche sowie Anweisungen zur weiteren Planung und Koordination beschreibt, stellt die Richtplankarte die Richtplaninhalte und die Ausgangslage im Massstab 1:25'000 grafisch dar und bietet eine visuelle Übersicht über die räumlichen Vorhaben.
+
+Die Inhalte des Richtplans werden nach ihrem Koordinationsstand unterschieden:
+
+*	*Vororientierung:* Vorhaben, die noch nicht abstimmungsreif sind oder worüber bloss generelle Vorstellungen bestehen, die aber erhebliche Auswirkungen auf die räumliche Entwicklung haben können.
+* *Zwischenergebnis:* Vorhaben, die noch nicht abgestimmt sind, für die sich aber klare Aussagen zu den weiteren Abstimmungsschritten machen lassen.
+* *Festsetzung:* Vorhaben, die mit Blick auf die wesentlichen räumlichen Auswirkungen bereits abgestimmt sind.
+* *Ausgangslage:* Die Inhalte der Ausgangslage zeigen den bestehenden Zustand und die für das Verständnis der Richtplaninhalte notwendigen Grundlagen auf.
 
 ifdef::backend-pdf[]
 <<<
