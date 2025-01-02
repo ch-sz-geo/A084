@@ -1,6 +1,6 @@
 == Modellbeschreibung
 
-Der kantonale Richtplan nach Art. 6 ff. des https://www.fedlex.admin.ch/eli/cc/1979/1573_1573_1573/de[Raumplanungsgesetzes (RPG), SR 700] ist das strategische und behördenverbindliche Führungs- und Steuerungsinstrument für die räumliche Entwicklung des Kantons. Er dient der langfristigen Lenkung der räumlichen Entwicklung und der Koordination sowie Abstimmung der raumwirksamen Tätigkeiten über alle Politik- und Sachbereiche hinweg.
+Der kantonale Richtplan nach Art. 6 ff. des https://www.fedlex.admin.ch/eli/cc/1979/1573_1573_1573/de[Raumplanungsgesetzes (RPG, SR 700)] ist das strategische und behördenverbindliche Führungs- und Steuerungsinstrument für die räumliche Entwicklung des Kantons. Er dient der langfristigen Lenkung der räumlichen Entwicklung und der Koordination sowie Abstimmung der raumwirksamen Tätigkeiten über alle Politik- und Sachbereiche hinweg.
 
 Inhaltlich deckt der Richtplan alle wesentlichen raumwirksamen Sachbereiche ab. Dazu gehören:
 
