@@ -2,10 +2,10 @@
 === Topic `+Stammdaten+`
 Das Topic `+Stammdaten+` umfasst alle statischen Werte. Darunter fallen z.B. die Aufzählwerte von Listen (INTERLIS-Datentyp «Aufzählung»). Jede Liste wird in einer eigenen Klasse modelliert. +
 
-Die Stammdaten werden durch die zuständige Stelle vorgegeben und bei Bedarf durch die Abteilung Geoinformation nachgeführt und . Die Stammdaten werden durch die Abteilung Geoinformation im Internet veröffentlicht.
+Die Stammdaten werden durch die zuständige Stelle vorgegeben und bei Bedarf durch die Abteilung Geoinformation nachgeführt und https://data.geo.sz.ch/public/Themen/A084a/Stammdaten.xtf[im Internet] veröffentlicht.
 
 ==== Klasse `+Katalogeintrag+`
-Die Klasse `+Katalogeintrag+` enthält die allgemeinen, für alle Kataloge gemeinsamen Attribute. Die Klasse selber ist abstrakt: Es gibt keine Objekte +Katalogeintrag+, sondern nur Objekte von den spezialisierten Klassen.
+Die Klasse `+Katalogeintrag+` enthält die allgemeinen, für alle Kataloge gemeinsamen Attribute. Die Klasse ist abstrakt: Es gibt keine Objekte des Typs `+Katalogeintrag+`, sondern nur Objekte von den spezialisierten Klassen.
 
 [cols=4*,options="header"]
 |===
@@ -73,24 +73,24 @@ m| geaendertAm
 | 2024-07-30T08:07:57
 | +++<span style="color:red;">intern</span>+++
 m| Titel
-| analog dem gleichnamigen Attribut des Bundesmodells
-| analog dem gleichnamigen Attribut des Bundesmodells
+| Titel der Karte
+| Richtplankarte
 | öffentlich
 m| Code
-| analog dem gleichnamigen Attribut des Bundesmodells
-| analog dem gleichnamigen Attribut des Bundesmodells
+| Code der Karte
+| K01
 | öffentlich
 m| Massstabszahl_Druck
-| analog dem gleichnamigen Attribut des Bundesmodells
-| analog dem gleichnamigen Attribut des Bundesmodells
+| Massstabszahl der gedruckten Karte
+| 25000
 | öffentlich
 m| Massstabszahl_Basiskarte
-| analog dem gleichnamigen Attribut des Bundesmodells
-| analog dem gleichnamigen Attribut des Bundesmodells
+| Massstabszahl der verwendeten Basiskarte
+| 10000
 | öffentlich
 m| Bemerkung
-| analog dem gleichnamigen Attribut des Bundesmodells
-| analog dem gleichnamigen Attribut des Bundesmodells
+| Bemerkung zur Karte
+| Das ist die Bemerkung zur Karte K01
 | öffentlich
 4+| *Beziehungsattribute*
 m| rKartentyp
@@ -100,7 +100,7 @@ m| rKartentyp
 |===
 
 ==== Klasse `+Objektgruppe+`
-Die Klasse `+Objektgruppe+` fasst gleichartige Objekte zu einer Gruppe zusammen und entspricht der abstrakten Klasse `+Objekt+` des Bundesmodells.
+Die Klasse `+Objektgruppe+` fasst gleichartige Objekte zu einer Gruppe zusammen. Sie enthält die Attribute der Klasse `+Objekt+` des Bundesmodells, welche für alle Objekte gelten.
 
 [cols=4*,options="header"]
 |===
@@ -122,39 +122,34 @@ m| geaendertAm
 | 2024-07-30T08:07:57
 | +++<span style="color:red;">intern</span>+++
 m| Originalbezeichnung
-| analog dem gleichnamigen Attribut des Bundesmodells
-| analog dem gleichnamigen Attribut des Bundesmodells
+| Originalbezeichnung des Objekts im kantonalen Richtplan
+| Flachmoore
 | öffentlich
 m| Code
-| analog dem gleichnamigen Attribut des Bundesmodells; im Unterschied zum Bundesmodell ist es ein Pflichtattribut
-| analog dem gleichnamigen Attribut des Bundesmodells
+| Code des Objektes
+| L04
 | öffentlich
 m| Abkuerzung
-| analog dem gleichnamigen Attribut des Bundesmodells
-| analog dem gleichnamigen Attribut des Bundesmodells
+| Abkürzung des Objektes im Richtplan
+| FM
 | öffentlich
 m| Kapitel
-| analog dem gleichnamigen Attribut des Bundesmodells
-| analog dem gleichnamigen Attribut des Bundesmodells
+| Bezeichnung des Kapitels im Richtplan
+| L-7
 | öffentlich
 m| Weblink
-| analog dem gleichnamigen Attribut des Bundesmodells
-| analog dem gleichnamigen Attribut des Bundesmodells
+| Weblink (URI) für weitere Informationen in Deutsch. Mit diesem Attribut kann ein Bezug zum Richtplantext hergestellt werden.
+| https://www.sz.ch/richtplan/L-7
 | öffentlich
 4+| *Beziehungsattribute*
 m| rThema
 | Fremdschlüssel zum Thema, welches der Objektgruppe zugeordnet ist.
 | e1a6fbe3-9598-4620-93f0-7ae8e5f89c68
 | öffentlich
-4+| *Geometrie*
-m| Geometrie
-| Geometrie des Objektes
-| (ohne Beispiel)
-| öffentlich
 |===
 
 ==== Klasse `+Objekt+`
-Die abstrakte Klasse `+Objekt+` führt .... .
+Die abstrakte Klasse `+Objekt+` führt die allgemeinen Attribute der geometrischen Elementen, welche auf dem Richtplan vorkommen. Sie enthält die verbleibenden Attribute der Klasse `+Objekt+` des Bundesmodells, welche nicht bereits auf der Klasse `+Objektgruppe+` vorhanden sind (siehe oben).
 
 [cols=4*,options="header"]
 |===
@@ -180,20 +175,20 @@ m| Beschlussdatum
 | analog dem gleichnamigen Attribut des Bundesmodells
 | öffentlich
 m| Massstabszahl_Erfassung
-| analog dem gleichnamigen Attribut des Bundesmodells
-| analog dem gleichnamigen Attribut des Bundesmodells
+| Massstabszahl der Erfassung
+| 25000
 | öffentlich
 m| Name
-| todo
-| todo
+| Name des Objektes
+| Wangen, Franzrütibucht
 | öffentlich
 m| Nummer
-| todo
-| todo
+| Nummer des Objektes
+| V-7.1-04
 | öffentlich
 m| Bemerkung
-| öffentliche Bemerkung zum Objekt
-| Das ist eine öffentliche Bemerkung
+| Bemerkung zum Objekt
+| Das ist eine Bemerkung
 | öffentlich
 4+| *Beziehungsattribute*
 m| rKoordinationsstand
@@ -212,12 +207,9 @@ m| rKarte
 | Fremdschlüssel zur Karte, welche dem Objekt zugeordnet ist.
 | e1a6fbe3-9598-4620-93f0-7ae8e5f89c68
 | öffentlich
-4+| *Geometrie*
-m| Geometrie
-| Geometrie des Objektes
-| (ohne Beispiel)
-| öffentlich
 |===
+
+Im Bundesmodell sind die geometrischen Objekte als Multi-Geometrien modelliert (MultiPoint, MultiLine, MultiSurface). Da nicht jedes GIS bzw. GIS-Format mit Multi-Geometrien umgehen kann, wird im kantonalen Modell ein allgemeinerer Ansatz über zwei Klassen gewählt: ein Klasse für die Sachinformationen und eine Klasse für die Geometrieobjekte. Die Beziehung zwischen diesen beiden Klassen ermöglich die Zuordnung mehrerer Geometrieobjekte zu einem Sachobjekt (Multi-Geometrie). Die Klasse mit den Sachobjekten weisen die Endung "-element" auf. Die Klassen mit der Geometrie die Endung "-geometrie".
 
 ==== Klasse `+Punktelement+`
 Die Klasse `+Punktelement+` ist eine Spezialisierung der abstrakten Klasse `+Objekt+`. Sie enthält keine weiteren Attribute.
@@ -360,7 +352,7 @@ m| Stand
 | 2024-07-25
 | öffentlich
 m| Bemerkung
-| Erläuterung zum Stand
+| Bemerkung zum Stand
 | Version, welche am 1. August 2024 veröffentlicht wurde.
 | öffentlich
 4+| *Beziehungsattribute*
