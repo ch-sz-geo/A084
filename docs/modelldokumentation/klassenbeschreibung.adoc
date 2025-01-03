@@ -94,14 +94,9 @@ m| Bemerkung
 | öffentlich
 4+| *Beziehungsattribute*
 m| rKartentyp
-| todo Fremdschlüssel zum Typ, welcher der Waldgrenze zugeordnet ist.
+| Fremdschlüssel zum Kartentyp, welcher der Karte zugeordnet ist.
 | e1a6fbe3-9598-4620-93f0-7ae8e5f89c68
 | öffentlich
-4+| *Geometrie*
-m| Geometrie
-| - - -
-| - - -
-| - - -
 |===
 
 ==== Klasse `+Objektgruppe+`
@@ -147,8 +142,8 @@ m| Weblink
 | analog dem gleichnamigen Attribut des Bundesmodells
 | öffentlich
 4+| *Beziehungsattribute*
-m| todo rKartentyp
-| todo Fremdschlüssel zum Typ, welcher der Waldgrenze zugeordnet ist.
+m| rThema
+| Fremdschlüssel zum Thema, welches der Objektgruppe zugeordnet ist.
 | e1a6fbe3-9598-4620-93f0-7ae8e5f89c68
 | öffentlich
 4+| *Geometrie*
@@ -201,8 +196,20 @@ m| Bemerkung
 | Das ist eine öffentliche Bemerkung
 | öffentlich
 4+| *Beziehungsattribute*
-m| todo
-| todo Fremdschlüssel zum Typ, welcher der Waldgrenze zugeordnet ist.
+m| rKoordinationsstand
+| Fremdschlüssel zum Koordinationsstand, welcher dem Objekt zugeordnet ist.
+| e1a6fbe3-9598-4620-93f0-7ae8e5f89c68
+| öffentlich
+m| rObjekttyp
+| Fremdschlüssel zum Objekttyp, welcher dem Objekt zugeordnet ist.
+| e1a6fbe3-9598-4620-93f0-7ae8e5f89c68
+| öffentlich
+m| rObjektgruppe
+| Fremdschlüssel zur Objektgruppe, welche dem Objekt zugeordnet ist.
+| e1a6fbe3-9598-4620-93f0-7ae8e5f89c68
+| öffentlich
+m| rKarte
+| Fremdschlüssel zur Karte, welche dem Objekt zugeordnet ist.
 | e1a6fbe3-9598-4620-93f0-7ae8e5f89c68
 | öffentlich
 4+| *Geometrie*
@@ -211,10 +218,6 @@ m| Geometrie
 | (ohne Beispiel)
 | öffentlich
 |===
-
-
-...ab hier weiter...
-
 
 ==== Klasse `+Punktelement+`
 Die Klasse `+Punktelement+` ist eine Spezialisierung der abstrakten Klasse `+Objekt+`. Sie enthält keine weiteren Attribute.
@@ -226,7 +229,7 @@ Die Klasse `+Linienelement+` ist eine Spezialisierung der abstrakten Klasse `+Ob
 Die Klasse `+Flaechenelement+` ist eine Spezialisierung der abstrakten Klasse `+Objekt+`. Sie enthält keine weiteren Attribute.
 
 ==== Klasse `+Punktgeometrie+`
-Die Klasse `+Punktgeometrie+` führt die Standardattribute und die Geometrie als Punkt.
+Die Klasse `+Punktgeometrie+` enthält die Richtplanobjekte mit dem Geometrietyp Punkt.
 
 [cols=4*,options="header"]
 |===
@@ -247,6 +250,11 @@ m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
 | +++<span style="color:red;">intern</span>+++
+4+| *Beziehungsattribute*
+m| rPunktelement
+| Fremdschlüssel zum Punktelement, welches der Punktgeometrie zugeordnet ist.
+| e1a6fbe3-9598-4620-93f0-7ae8e5f89c68
+| öffentlich
 4+| *Geometrie*
 m| Geometrie
 | Geometrie des Objektes als Punkt
@@ -255,7 +263,7 @@ m| Geometrie
 |===
 
 ==== Klasse `+Liniengeometrie+`
-Die Klasse `+Liniengeometrie+` führt die Standardattribute und die Geometrie als Linie.
+Die Klasse `+Liniengeometrie+` enthält die Richtplanobjekte mit dem Geometrietyp Linie.
 
 [cols=4*,options="header"]
 |===
@@ -276,6 +284,11 @@ m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
 | +++<span style="color:red;">intern</span>+++
+4+| *Beziehungsattribute*
+m| rLinienelement
+| Fremdschlüssel zum Linienelement, welches der Liniengeometrie zugeordnet ist.
+| e1a6fbe3-9598-4620-93f0-7ae8e5f89c68
+| öffentlich
 4+| *Geometrie*
 m| Geometrie
 | Geometrie des Objektes als Linie
@@ -284,7 +297,7 @@ m| Geometrie
 |===
 
 ==== Klasse `+Flaechengeometrie+`
-Die Klasse `+Flaechengeometrie+` führt die Standardattribute und die Geometrie als Fläche.
+Die Klasse `+Flaechengeometrie+` enthält die Richtplanobjekte mit dem Geometrietyp Fläche.
 
 [cols=4*,options="header"]
 |===
@@ -305,6 +318,11 @@ m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
 | +++<span style="color:red;">intern</span>+++
+4+| *Beziehungsattribute*
+m| rFlaechenelement
+| Fremdschlüssel zum Flächenelement, welches der Flaechengeometrie zugeordnet ist.
+| e1a6fbe3-9598-4620-93f0-7ae8e5f89c68
+| öffentlich
 4+| *Geometrie*
 m| Geometrie
 | Geometrie des Objektes als Fläche
@@ -345,11 +363,15 @@ m| Bemerkung
 | Erläuterung zum Stand
 | Version, welche am 1. August 2024 veröffentlicht wurde.
 | öffentlich
-4+| *Geometrie*
-m| Geometrie
-| - - -
-| - - -
-| - - -
+4+| *Beziehungsattribute*
+m| rDatenbestandSingleton
+| Fremdschlüssel auf sich selbst, um nur ein Objekt auf der Klasse zu erwzingen (Singleton-Muster).
+| e1a6fbe3-9598-4620-93f0-7ae8e5f89c68
+| öffentlich
+m| rVerfahrensstatus
+| Fremdschlüssel zum Verfahrensstatus, welcher dem Datenbestand zugeordnet ist.
+| e1a6fbe3-9598-4620-93f0-7ae8e5f89c68
+| öffentlich
 |===
 
 ifdef::backend-pdf[]
