@@ -272,7 +272,7 @@ th {
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">letzte Änderung</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2025-01-02</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2025-01-03</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Themen-Nummer</p></td>
@@ -650,18 +650,9 @@ Kuno Epper (Kep), AGI</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>rKartentyp</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">todo Fremdschlüssel zum Typ, welcher der Waldgrenze zugeordnet ist.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Kartentyp, welcher der Karte zugeordnet ist.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">e1a6fbe3-9598-4620-93f0-7ae8e5f89c68</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Geometrie</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Geometrie</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
 </tr>
 </tbody>
 </table>
@@ -745,8 +736,8 @@ Kuno Epper (Kep), AGI</p></td>
 <td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>todo rKartentyp</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">todo Fremdschlüssel zum Typ, welcher der Waldgrenze zugeordnet ist.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rThema</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Thema, welches der Objektgruppe zugeordnet ist.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">e1a6fbe3-9598-4620-93f0-7ae8e5f89c68</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
@@ -841,8 +832,26 @@ Kuno Epper (Kep), AGI</p></td>
 <td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>todo</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">todo Fremdschlüssel zum Typ, welcher der Waldgrenze zugeordnet ist.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rKoordinationsstand</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Koordinationsstand, welcher dem Objekt zugeordnet ist.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e1a6fbe3-9598-4620-93f0-7ae8e5f89c68</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rObjekttyp</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Objekttyp, welcher dem Objekt zugeordnet ist.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e1a6fbe3-9598-4620-93f0-7ae8e5f89c68</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rObjektgruppe</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zur Objektgruppe, welche dem Objekt zugeordnet ist.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e1a6fbe3-9598-4620-93f0-7ae8e5f89c68</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rKarte</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zur Karte, welche dem Objekt zugeordnet ist.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">e1a6fbe3-9598-4620-93f0-7ae8e5f89c68</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
@@ -857,9 +866,6 @@ Kuno Epper (Kep), AGI</p></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>&#8230;&#8203;ab hier weiter&#8230;&#8203;</p>
-</div>
 </div>
 <div class="sect3">
 <h4 id="_klasse_punktelement"><a class="anchor" href="#_klasse_punktelement"></a><a class="link" href="#_klasse_punktelement">4.2.4. Klasse <code>Punktelement</code></a></h4>
@@ -882,7 +888,7 @@ Kuno Epper (Kep), AGI</p></td>
 <div class="sect3">
 <h4 id="_klasse_punktgeometrie"><a class="anchor" href="#_klasse_punktgeometrie"></a><a class="link" href="#_klasse_punktgeometrie">4.2.7. Klasse <code>Punktgeometrie</code></a></h4>
 <div class="paragraph">
-<p>Die Klasse <code>Punktgeometrie</code> führt die Standardattribute und die Geometrie als Punkt.</p>
+<p>Die Klasse <code>Punktgeometrie</code> enthält die Richtplanobjekte mit dem Geometrietyp Punkt.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -923,6 +929,15 @@ Kuno Epper (Kep), AGI</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2024-07-30T08:07:57</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rPunktelement</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Punktelement, welches der Punktgeometrie zugeordnet ist.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e1a6fbe3-9598-4620-93f0-7ae8e5f89c68</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Geometrie</strong></p></td>
@@ -939,7 +954,7 @@ Kuno Epper (Kep), AGI</p></td>
 <div class="sect3">
 <h4 id="_klasse_liniengeometrie"><a class="anchor" href="#_klasse_liniengeometrie"></a><a class="link" href="#_klasse_liniengeometrie">4.2.8. Klasse <code>Liniengeometrie</code></a></h4>
 <div class="paragraph">
-<p>Die Klasse <code>Liniengeometrie</code> führt die Standardattribute und die Geometrie als Linie.</p>
+<p>Die Klasse <code>Liniengeometrie</code> enthält die Richtplanobjekte mit dem Geometrietyp Linie.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -980,6 +995,15 @@ Kuno Epper (Kep), AGI</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2024-07-30T08:07:57</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rLinienelement</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Linienelement, welches der Liniengeometrie zugeordnet ist.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e1a6fbe3-9598-4620-93f0-7ae8e5f89c68</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Geometrie</strong></p></td>
@@ -996,7 +1020,7 @@ Kuno Epper (Kep), AGI</p></td>
 <div class="sect3">
 <h4 id="_klasse_flaechengeometrie"><a class="anchor" href="#_klasse_flaechengeometrie"></a><a class="link" href="#_klasse_flaechengeometrie">4.2.9. Klasse <code>Flaechengeometrie</code></a></h4>
 <div class="paragraph">
-<p>Die Klasse <code>Flaechengeometrie</code> führt die Standardattribute und die Geometrie als Fläche.</p>
+<p>Die Klasse <code>Flaechengeometrie</code> enthält die Richtplanobjekte mit dem Geometrietyp Fläche.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1037,6 +1061,15 @@ Kuno Epper (Kep), AGI</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2024-07-30T08:07:57</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color:red;">intern</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rFlaechenelement</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Flächenelement, welches der Flaechengeometrie zugeordnet ist.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e1a6fbe3-9598-4620-93f0-7ae8e5f89c68</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Geometrie</strong></p></td>
@@ -1114,13 +1147,19 @@ Kuno Epper (Kep), AGI</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Geometrie</strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Beziehungsattribute</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Geometrie</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- - -</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rDatenbestandSingleton</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel auf sich selbst, um nur ein Objekt auf der Klasse zu erwzingen (Singleton-Muster).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e1a6fbe3-9598-4620-93f0-7ae8e5f89c68</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rVerfahrensstatus</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fremdschlüssel zum Verfahrensstatus, welcher dem Datenbestand zugeordnet ist.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e1a6fbe3-9598-4620-93f0-7ae8e5f89c68</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 </tbody>
 </table>
@@ -1131,7 +1170,7 @@ Kuno Epper (Kep), AGI</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-01-02 15:59:14 UTC
+Last updated 2025-01-03 07:17:00 UTC
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
