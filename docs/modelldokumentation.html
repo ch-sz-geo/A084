@@ -478,12 +478,12 @@ Kuno Epper (Kep), AGI</p></td>
 <p>Das Topic <code>Stammdaten</code> umfasst alle statischen Werte. Darunter fallen z.B. die Aufzählwerte von Listen (INTERLIS-Datentyp «Aufzählung»). Jede Liste wird in einer eigenen Klasse modelliert.<br></p>
 </div>
 <div class="paragraph">
-<p>Die Stammdaten werden durch die zuständige Stelle vorgegeben und bei Bedarf durch die Abteilung Geoinformation nachgeführt und . Die Stammdaten werden durch die Abteilung Geoinformation im Internet veröffentlicht.</p>
+<p>Die Stammdaten werden durch die zuständige Stelle vorgegeben und bei Bedarf durch die Abteilung Geoinformation nachgeführt und <a href="https://data.geo.sz.ch/public/Themen/A084a/Stammdaten.xtf">im Internet</a> veröffentlicht.</p>
 </div>
 <div class="sect3">
 <h4 id="_klasse_katalogeintrag"><a class="anchor" href="#_klasse_katalogeintrag"></a><a class="link" href="#_klasse_katalogeintrag">4.1.1. Klasse <code>Katalogeintrag</code></a></h4>
 <div class="paragraph">
-<p>Die Klasse <code>Katalogeintrag</code> enthält die allgemeinen, für alle Kataloge gemeinsamen Attribute. Die Klasse selber ist abstrakt: Es gibt keine Objekte Katalogeintrag, sondern nur Objekte von den spezialisierten Klassen.</p>
+<p>Die Klasse <code>Katalogeintrag</code> enthält die allgemeinen, für alle Kataloge gemeinsamen Attribute. Die Klasse ist abstrakt: Es gibt keine Objekte des Typs <code>Katalogeintrag</code>, sondern nur Objekte von den spezialisierten Klassen.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -617,32 +617,32 @@ Kuno Epper (Kep), AGI</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Titel</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Titel der Karte</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Richtplankarte</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Code</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code der Karte</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">K01</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Massstabszahl_Druck</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Massstabszahl der gedruckten Karte</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25000</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Massstabszahl_Basiskarte</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Massstabszahl der verwendeten Basiskarte</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10000</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bemerkung zur Karte</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Das ist die Bemerkung zur Karte K01</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
@@ -660,7 +660,7 @@ Kuno Epper (Kep), AGI</p></td>
 <div class="sect3">
 <h4 id="_klasse_objektgruppe"><a class="anchor" href="#_klasse_objektgruppe"></a><a class="link" href="#_klasse_objektgruppe">4.2.2. Klasse <code>Objektgruppe</code></a></h4>
 <div class="paragraph">
-<p>Die Klasse <code>Objektgruppe</code> fasst gleichartige Objekte zu einer Gruppe zusammen und entspricht der abstrakten Klasse <code>Objekt</code> des Bundesmodells.</p>
+<p>Die Klasse <code>Objektgruppe</code> fasst gleichartige Objekte zu einer Gruppe zusammen. Sie enthält die Attribute der Klasse <code>Objekt</code> des Bundesmodells, welche für alle Objekte gelten.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -704,32 +704,32 @@ Kuno Epper (Kep), AGI</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Originalbezeichnung</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Originalbezeichnung des Objekts im kantonalen Richtplan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flachmoore</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Code</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells; im Unterschied zum Bundesmodell ist es ein Pflichtattribut</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code des Objektes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">L04</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Abkuerzung</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Abkürzung des Objektes im Richtplan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FM</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Kapitel</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bezeichnung des Kapitels im Richtplan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">L-7</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Weblink</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Weblink (URI) für weitere Informationen in Deutsch. Mit diesem Attribut kann ein Bezug zum Richtplantext hergestellt werden.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.sz.ch/richtplan/L-7" class="bare">https://www.sz.ch/richtplan/L-7</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
@@ -741,22 +741,13 @@ Kuno Epper (Kep), AGI</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">e1a6fbe3-9598-4620-93f0-7ae8e5f89c68</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Geometrie</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Geometrie</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Geometrie des Objektes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(ohne Beispiel)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
 </tbody>
 </table>
 </div>
 <div class="sect3">
 <h4 id="_klasse_objekt"><a class="anchor" href="#_klasse_objekt"></a><a class="link" href="#_klasse_objekt">4.2.3. Klasse <code>Objekt</code></a></h4>
 <div class="paragraph">
-<p>Die abstrakte Klasse <code>Objekt</code> führt &#8230;&#8203;. .</p>
+<p>Die abstrakte Klasse <code>Objekt</code> führt die allgemeinen Attribute der geometrischen Elementen, welche auf dem Richtplan vorkommen. Sie enthält die verbleibenden Attribute der Klasse <code>Objekt</code> des Bundesmodells, welche nicht bereits auf der Klasse <code>Objektgruppe</code> vorhanden sind (siehe oben).</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -806,26 +797,26 @@ Kuno Epper (Kep), AGI</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Massstabszahl_Erfassung</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">analog dem gleichnamigen Attribut des Bundesmodells</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Massstabszahl der Erfassung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25000</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">todo</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">todo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name des Objektes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wangen, Franzrütibucht</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Nummer</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">todo</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">todo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nummer des Objektes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">V-7.1-04</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentliche Bemerkung zum Objekt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Das ist eine öffentliche Bemerkung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bemerkung zum Objekt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Das ist eine Bemerkung</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
 <tr>
@@ -855,17 +846,11 @@ Kuno Epper (Kep), AGI</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">e1a6fbe3-9598-4620-93f0-7ae8e5f89c68</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top" colspan="4"><p class="tableblock"><strong>Geometrie</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Geometrie</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Geometrie des Objektes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(ohne Beispiel)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
-</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Im Bundesmodell sind die geometrischen Objekte als Multi-Geometrien modelliert (MultiPoint, MultiLine, MultiSurface). Da nicht jedes GIS bzw. GIS-Format mit Multi-Geometrien umgehen kann, wird im kantonalen Modell ein allgemeinerer Ansatz über zwei Klassen gewählt: ein Klasse für die Sachinformationen und eine Klasse für die Geometrieobjekte. Die Beziehung zwischen diesen beiden Klassen ermöglich die Zuordnung mehrerer Geometrieobjekte zu einem Sachobjekt (Multi-Geometrie). Die Klasse mit den Sachobjekten weisen die Endung "-element" auf. Die Klassen mit der Geometrie die Endung "-geometrie".</p>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_klasse_punktelement"><a class="anchor" href="#_klasse_punktelement"></a><a class="link" href="#_klasse_punktelement">4.2.4. Klasse <code>Punktelement</code></a></h4>
@@ -1142,7 +1127,7 @@ Kuno Epper (Kep), AGI</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Erläuterung zum Stand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bemerkung zum Stand</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Version, welche am 1. August 2024 veröffentlicht wurde.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
 </tr>
@@ -1170,7 +1155,7 @@ Kuno Epper (Kep), AGI</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-01-03 07:17:00 UTC
+Last updated 2025-01-03 08:26:19 UTC
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
