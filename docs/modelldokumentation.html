@@ -239,8 +239,17 @@ th {
 </li>
 <li><a href="#_modelltransformationen">5. Modelltransformationen</a>
 <ul class="sectlevel2">
-<li><a href="#_transformation_ins_minimale_geodatenmodell_des_bundes">5.1. Transformation ins minimale Geodatenmodell des Bundes</a></li>
-<li><a href="#_transformation_ins_transfermodell_des_öreb_katasters">5.2. Transformation ins Transfermodell des ÖREB-Katasters</a></li>
+<li><a href="#_transformation_ins_minimale_geodatenmodell_des_bundes">5.1. Transformation ins minimale Geodatenmodell des Bundes</a>
+<ul class="sectlevel3">
+<li><a href="#_klasse_karte_2">5.1.1. Klasse <code>Karte</code></a></li>
+<li><a href="#_klasse_objekt_2">5.1.2. Klasse <code>Objekt</code></a></li>
+<li><a href="#_klasse_punkt">5.1.3. Klasse <code>Punkt</code></a></li>
+<li><a href="#_klasse_linie">5.1.4. Klasse <code>Linie</code></a></li>
+<li><a href="#_klasse_flaeche">5.1.5. Klasse <code>Flaeche</code></a></li>
+<li><a href="#_klasse_amt">5.1.6. Klasse <code>Amt</code></a></li>
+<li><a href="#_klasse_datenbestand_2">5.1.7. Klasse <code>Datenbestand</code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1164,77 +1173,270 @@ Kuno Epper (Kep), AGI</p></td>
 <div class="sect2">
 <h3 id="_transformation_ins_minimale_geodatenmodell_des_bundes"><a class="anchor" href="#_transformation_ins_minimale_geodatenmodell_des_bundes"></a><a class="link" href="#_transformation_ins_minimale_geodatenmodell_des_bundes">5.1. Transformation ins minimale Geodatenmodell des Bundes</a></h3>
 <div class="paragraph">
-<p>Zielmodell: Waldgrenzen_V1_2 (Version: 2023-03-20) <a href="http://models.geo.admin.ch/BAFU/Waldgrenzen_V1_2.ili" class="bare">http://models.geo.admin.ch/BAFU/Waldgrenzen_V1_2.ili</a></p>
+<p>Zielmodell: Richtplaene_V1 (Version: 2022-07-01) <a href="http://models.geo.admin.ch/ARE/Richtplaene_V1.ili" class="bare">http://models.geo.admin.ch/ARE/Richtplaene_V1.ili</a></p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_transformation_ins_transfermodell_des_öreb_katasters"><a class="anchor" href="#_transformation_ins_transfermodell_des_öreb_katasters"></a><a class="link" href="#_transformation_ins_transfermodell_des_öreb_katasters">5.2. Transformation ins Transfermodell des ÖREB-Katasters</a></h3>
 <div class="paragraph">
-<p>Zielmodell: todo</p>
+<p>Die nachfolgenden Tabellen orientieren sich an den Klassen gemäss Bundesmodell. Das "Zielattribut" ist das Attribut gemäss Bundesmodell. Das "Quellattribut" ist das Attribut des kantonalen Modells.</p>
 </div>
+<div class="sect3">
+<h4 id="_klasse_karte_2"><a class="anchor" href="#_klasse_karte_2"></a><a class="link" href="#_klasse_karte_2">5.1.1. Klasse <code>Karte</code></a></h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 60%;">
-</colgroup>
-<tbody>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Code</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Abkürzung</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Bezeichnung</p></th>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">61.1.1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rGP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Gestaltungsplan "Dörfli"</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">61.1.2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rGP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Gestaltungsplan "Freihof"</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">61.1.11</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rGP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Gestaltungsplan "Freihof West"</p></td>
-</tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
+<col style="width: 50%;">
+<col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">heading column 1</th>
-<th class="tableblock halign-left valign-top">heading column 2</th>
+<th class="tableblock halign-left valign-top">Quellattribut<br>
+(Kantonsmodell)</th>
+<th class="tableblock halign-left valign-top">Zielattribut<br>
+(Bundesmodell)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">row 1 column 1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">row 1 column 2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Karte.Code</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Code</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">row 2 column 1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">row 2 column 2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Karte.Titel</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Titel</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Stammdaten.Kartentyp.OID</code><br>
+hergeleitet über <code>Karte.rKartentyp</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Kartentyp</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Karte.Massstabszahl_Druck</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Massstabszahl_Druck</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Karte.Massstabszahl_Basiskarte</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Massstabszahl_Basiskarte</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Karte.Bemerkung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_objekt_2"><a class="anchor" href="#_klasse_objekt_2"></a><a class="link" href="#_klasse_objekt_2">5.1.2. Klasse <code>Objekt</code></a></h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Quellattribut<br>
+(Kantonsmodell)</th>
+<th class="tableblock halign-left valign-top">Zielattribut<br>
+(Bundesmodell)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Objektgruppe.Code</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Code</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Objektgruppe.Originalbezeichnung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Originalbezeichnung</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Objektgruppe.Abkuerzung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Abkuerzung</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Objektgruppe.Kapitel</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Kapitel</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Stammdaten.Thema.OID</code><br>
+hergeleitet über <code>Objektgruppe.rThema</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Thema</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Stammdaten.Koordinationsstand.OID</code><br>
+hergeleitet über <code>Objekt.rKoordinationsstand</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Koordinationsstand</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Stammdaten.Objekttyp.OID</code><br>
+hergeleitet über <code>Objekt.rObjekttyp</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Objekttyp</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Objekt.Beschlussdatum</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Datum_Beschluss</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Objekt.Massstabszahl_Erfassung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Massstabszahl_Erfassung</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fix: "SZ"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Kanton</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Objektgruppe.Weblink</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Weblink</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Objekt.Bemerkung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_punkt"><a class="anchor" href="#_klasse_punkt"></a><a class="link" href="#_klasse_punkt">5.1.3. Klasse <code>Punkt</code></a></h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Quellattribut<br>
+(Kantonsmodell)</th>
+<th class="tableblock halign-left valign-top">Zielattribut<br>
+(Bundesmodell)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Punktgeometrie.Geometrie</code><br>
+hergeleitet über <code>Punktgeometrie.rPunktelement</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Geometrie</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_linie"><a class="anchor" href="#_klasse_linie"></a><a class="link" href="#_klasse_linie">5.1.4. Klasse <code>Linie</code></a></h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Quellattribut<br>
+(Kantonsmodell)</th>
+<th class="tableblock halign-left valign-top">Zielattribut<br>
+(Bundesmodell)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Liniengeometrie.Geometrie</code><br>
+hergeleitet über <code>Liniengeometrie.rLinienelement</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Geometrie</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_flaeche"><a class="anchor" href="#_klasse_flaeche"></a><a class="link" href="#_klasse_flaeche">5.1.5. Klasse <code>Flaeche</code></a></h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Quellattribut<br>
+(Kantonsmodell)</th>
+<th class="tableblock halign-left valign-top">Zielattribut<br>
+(Bundesmodell)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Flaechengeometrie.Geometrie</code><br>
+hergeleitet über <code>Flaechengeometrie.rFlaechenelement</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Geometrie</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_amt"><a class="anchor" href="#_klasse_amt"></a><a class="link" href="#_klasse_amt">5.1.6. Klasse <code>Amt</code></a></h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Quellattribut<br>
+(Kantonsmodell)</th>
+<th class="tableblock halign-left valign-top">Zielattribut<br>
+(Bundesmodell)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fix: "Amt für Raumentwicklung" (Sprache: "de")</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Name</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fix: "https://www.sz.ch/are" (Sprache: "de")</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AmtImWeb</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fix: &lt;NULL&gt;, weil unbekannt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>UID</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_klasse_datenbestand_2"><a class="anchor" href="#_klasse_datenbestand_2"></a><a class="link" href="#_klasse_datenbestand_2">5.1.7. Klasse <code>Datenbestand</code></a></h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Quellattribut<br>
+(Kantonsmodell)</th>
+<th class="tableblock halign-left valign-top">Zielattribut<br>
+(Bundesmodell)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fix: "ch.sz.a084a.geobasisdaten"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>BasketID</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Datenbestand.Stand</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Stand</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum, an dem die Daten ins Bundesmodell überführt wurden</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Lieferdatum</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Datenbestand.Bemerkung</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Bemerkung</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-01-03 10:24:11 UTC
+Last updated 2025-01-03 13:30:24 UTC
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
