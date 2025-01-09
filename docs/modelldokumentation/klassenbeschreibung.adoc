@@ -63,7 +63,7 @@ m| erfasstVon
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
@@ -71,7 +71,7 @@ m| geaendertVon
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| Titel
 | Titel der Karte
 | Richtplankarte
@@ -112,7 +112,7 @@ m| erfasstVon
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
@@ -120,7 +120,7 @@ m| geaendertVon
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| Originalbezeichnung
 | Originalbezeichnung des Objekts im kantonalen Richtplan
 | Flachmoore
@@ -161,7 +161,7 @@ m| erfasstVon
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
@@ -169,7 +169,7 @@ m| geaendertVon
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| Beschlussdatum
 | analog dem Attribut `+Datum_Beschluss+` des Bundesmodells
 | analog dem gleichnamigen Attribut des Bundesmodells
@@ -233,7 +233,7 @@ m| erfasstVon
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
@@ -241,7 +241,7 @@ m| geaendertVon
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 4+| *Beziehungsattribute*
 m| rPunktelement
 | Fremdschlüssel zum Punktelement, welches der Punktgeometrie zugeordnet ist.
@@ -267,7 +267,7 @@ m| erfasstVon
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
@@ -275,7 +275,7 @@ m| geaendertVon
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 4+| *Beziehungsattribute*
 m| rLinienelement
 | Fremdschlüssel zum Linienelement, welches der Liniengeometrie zugeordnet ist.
@@ -301,7 +301,7 @@ m| erfasstVon
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
@@ -309,7 +309,7 @@ m| geaendertVon
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 4+| *Beziehungsattribute*
 m| rFlaechenelement
 | Fremdschlüssel zum Flächenelement, welches der Flaechengeometrie zugeordnet ist.
@@ -338,7 +338,7 @@ m| erfasstVon
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
@@ -346,7 +346,7 @@ m| geaendertVon
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| +++<span style="color:red;">intern</span>+++
+| öffentlich
 m| Stand
 | Datum, welches dem Zeitpunkt der letzten Nachführung entspricht.
 | 2024-07-25
