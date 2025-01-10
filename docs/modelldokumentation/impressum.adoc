@@ -10,11 +10,12 @@
 |letzte Änderung | {docdate}
 | Themen-Nummer | A084
 | ID nach kGeoiV | 69 
-| Beteiligte | Laura Lacher (LL), ARE + 
+| Beteiligte | Angela Inderbitzin (AI), ARE +
+Laura Lacher (LL), ARE + 
 Kuno Epper (Kep), AGI
-| Status a| - [x] Entwurf 
+| Status a| - [ ] Entwurf
 - [ ] bereit für Vernehmlassung
-- [ ] gültig
+- [x] gültig
 |=======
 ====
 
@@ -24,7 +25,7 @@ Kuno Epper (Kep), AGI
 [cols="10%, 10%, 10%, 70%"]
 |=======
 h| Version h| Datum h| Koreferent h| Prüfstelle
-| 1.0 | 2001-01-01 | xy | Amt A
+| 1.0 | 2025-01-10 | AI | ARE
 |=======
 ====
 
