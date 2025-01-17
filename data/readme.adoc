@@ -1,3 +1,4 @@
 = Dateibeschreibung
 
-* *<Dateiname>:* Diese Datei enthält <zu ergänzen>.
+* *Stammdaten_2024-06-06.xtf:* Diese Datei enthält die Stammdaten, welche für die publizierten Daten gelten. Die Datei wurde am 6. Juni 2024 erstellt.
+* *Stammdaten_2025-01-17.xtf:* Diese Datei enthält die Stammdaten, welche aktuell gültig sind. Unterschied zur Vorversion: Der Wert für die BID folgt neu dem Standard.
