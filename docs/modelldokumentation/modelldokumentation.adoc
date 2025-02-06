@@ -1,6 +1,6 @@
 // Hier den Titel eingeben
-:title: Modelldokumentation 
-:subtitle: Richtplan, kantonal (A084)
+:title: Richtplan, kantonal (A084)
+:subtitle: Modelldokumentation
 ifdef::backend-pdf[]
 = {title}
 {subtitle}
