@@ -12,13 +12,25 @@ on:
       - 'docs/modelldokumentation/*'
       - 'docs/erfassungsrichtlinien/*'
       - 'docs/img/*'
-      - 'index.html'
-  pull_request:
-    branches: [ master, main ]
-  
+      - 'index.html' 
+
+  workflow_run:
+    workflows: ["Initialize Repository"]
+    types: [completed]
+    
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  
+  # Triggers when an A000_defaultDesign design_update is run
+  repository_dispatch:
+    types: [update-design]
 
+# This is so the initialize and the main workflow can't run simultaiously
+concurrency:
+  group: my-shared-group
+  cancel-in-progress: false
+
+  
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
@@ -32,25 +44,34 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42 # v1.161.0
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 0 # Increment this number if you need to re-download cached gems
-      - name: install Gem
+          ruby-version: 3.2 # Stelle sicher, dass die Version kompatibel ist
+          #bundler-cache: true # Automatisch 'bundle install' ausführen und Gems cachen
+      
+      - name: Verify Installation
         run: gem install asciidoctor
+      - name: Verify Installation
+        run: asciidoctor --version
       - name: create file
         run: |
-          asciidoctor -o ./docs/modelldokumentation.html ./docs/modelldokumentation/modelldokumentation.adoc
-          asciidoctor -o ./docs/erfassungsrichtlinien.html ./docs/erfassungsrichtlinien/erfassungsrichtlinien.adoc
+          asciidoctor -a stylesdir=https://ch-sz-geo.github.io/A000_defaultDesign/themes/ -a stylesheet=stylesheet.css -a linkcss -o ./docs/modelldokumentation.html ./docs/modelldokumentation/modelldokumentation.adoc
+          asciidoctor -a stylesdir=https://ch-sz-geo.github.io/A000_defaultDesign/themes/ -a stylesheet=style_entry.css -a linkcss -o ./docs/erfassungsrichtlinien.html ./docs/erfassungsrichtlinien/erfassungsrichtlinien.adoc
       - name: install Asciidoc Pdf
         run: gem install asciidoctor-pdf
       - name: create pdfs
         run: |
-          asciidoctor-pdf --theme ./themes/pdfTheme.yml -o ./docs/modelldokumentation.pdf ./docs/modelldokumentation/modelldokumentation.adoc
-          asciidoctor-pdf --theme ./themes/pdfTheme.yml -o ./docs/erfassungsrichtlinien.pdf ./docs/erfassungsrichtlinien/erfassungsrichtlinien.adoc
+          curl -fsSL https://ch-sz-geo.github.io/A000_defaultDesign/themes/pdfTheme.yml -o /tmp/pdfTheme.yml
+          curl -fsSL https://github.com/ch-sz-geo/A000_defaultDesign/raw/refs/heads/main/fonts/tradegothic-Italic.ttf -o /tmp/tradegothic-Italic.ttf
+          curl -fsSL https://github.com/ch-sz-geo/A000_defaultDesign/raw/refs/heads/main/fonts/tradegothic-bold.ttf -o /tmp/tradegothic-bold.ttf
+          curl -fsSL https://github.com/ch-sz-geo/A000_defaultDesign/raw/refs/heads/main/fonts/tradegothic-bold_italic.ttf -o /tmp/tradegothic-bold_italic.ttf
+          curl -fsSL https://github.com/ch-sz-geo/A000_defaultDesign/raw/refs/heads/main/fonts/tradegothic-light.ttf -o /tmp/tradegothic-light.ttf
+          curl -fsSL https://github.com/ch-sz-geo/A000_defaultDesign/raw/refs/heads/main/fonts/tradegothic-normal.ttf -o /tmp/tradegothic-normal.ttf
+          asciidoctor-pdf -a allow-uri-read -a imagesdir= -a pdf-fontsdir=/tmp --theme /tmp/pdfTheme.yml -o ./docs/modelldokumentation.pdf ./docs/modelldokumentation/modelldokumentation.adoc
+          asciidoctor-pdf -a allow-uri-read -a imagesdir= -a pdf-fontsdir=/tmp --theme /tmp/pdfTheme.yml -o ./docs/erfassungsrichtlinien.pdf ./docs/erfassungsrichtlinien/erfassungsrichtlinien.adoc
       - name: Commit HTML
         run: |
           git config --global user.email "actions@github.com"
