@@ -1,4 +1,4 @@
-:title: <Themenname> (<Themennummer>)
+:title: Richtplan, kantonal (A084)
 :subtitle: Modelldokumentation
 ifdef::backend-pdf[]
 = {title}
