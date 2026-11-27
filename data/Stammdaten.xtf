@@ -6,7 +6,7 @@
  </MODELS>
 </HEADERSECTION>
 <DATASECTION>
-<SZ_Richtplan_V1.Stammdaten BID="SZ_Richtplan_V1.Stammdaten">
+<SZ_Richtplan_V1.Stammdaten BID="ch.sz.a084.stammdaten.2000-01-01">
     <SZ_Richtplan_V1.Stammdaten.Kartentyp TID="d9e0b359-671f-4499-9ae7-9478febea80a"><Name>Richtplankarte</Name><Code>71</Code><SortierNr>71</SortierNr><Bemerkung></Bemerkung></SZ_Richtplan_V1.Stammdaten.Kartentyp>
     <SZ_Richtplan_V1.Stammdaten.Kartentyp TID="9128b53c-ae39-49d7-9fd6-3a33757c03f3"><Name>Karte der kantonalen Raumentwicklungsstrategie</Name><Code>72</Code><SortierNr>72</SortierNr><Bemerkung></Bemerkung></SZ_Richtplan_V1.Stammdaten.Kartentyp>
     <SZ_Richtplan_V1.Stammdaten.Kartentyp TID="e593fc22-8733-4b05-bbab-5c332a195b57"><Name>weitere Karten</Name><Code>73</Code><SortierNr>73</SortierNr><Bemerkung></Bemerkung></SZ_Richtplan_V1.Stammdaten.Kartentyp>
