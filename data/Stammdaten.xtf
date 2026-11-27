@@ -6,7 +6,7 @@
  </MODELS>
 </HEADERSECTION>
 <DATASECTION>
-<SZ_Richtplan_V1.Stammdaten BID="ch.sz.a084.stammdaten.2000-01-01">
+<SZ_Richtplan_V1.Stammdaten BID="ch.sz.a084.stammdaten.2026-11-27">
     <SZ_Richtplan_V1.Stammdaten.Kartentyp TID="d9e0b359-671f-4499-9ae7-9478febea80a"><Name>Richtplankarte</Name><Code>71</Code><SortierNr>71</SortierNr><Bemerkung></Bemerkung></SZ_Richtplan_V1.Stammdaten.Kartentyp>
     <SZ_Richtplan_V1.Stammdaten.Kartentyp TID="9128b53c-ae39-49d7-9fd6-3a33757c03f3"><Name>Karte der kantonalen Raumentwicklungsstrategie</Name><Code>72</Code><SortierNr>72</SortierNr><Bemerkung></Bemerkung></SZ_Richtplan_V1.Stammdaten.Kartentyp>
     <SZ_Richtplan_V1.Stammdaten.Kartentyp TID="e593fc22-8733-4b05-bbab-5c332a195b57"><Name>weitere Karten</Name><Code>73</Code><SortierNr>73</SortierNr><Bemerkung></Bemerkung></SZ_Richtplan_V1.Stammdaten.Kartentyp>
@@ -105,8 +105,9 @@
     <SZ_Richtplan_V1.Stammdaten.Verfahrensstatus TID="455a27a0-283e-4060-93ad-193f7e16a421"><Name>behördliche Mitwirkung</Name><Code>behoerdliche_Mitwirkung</Code><SortierNr>3</SortierNr><Bemerkung></Bemerkung></SZ_Richtplan_V1.Stammdaten.Verfahrensstatus>
     <SZ_Richtplan_V1.Stammdaten.Verfahrensstatus TID="1f949cdf-ebc3-478c-a845-29a905b15ff3"><Name>öffentliche Mitwirkung / Vorprüfung Bund</Name><Code>oeffentliche_Mitwirkung</Code><SortierNr>4</SortierNr><Bemerkung></Bemerkung></SZ_Richtplan_V1.Stammdaten.Verfahrensstatus>
     <SZ_Richtplan_V1.Stammdaten.Verfahrensstatus TID="b6e9f1e9-d404-469f-86d7-0e10a57a7ea1"><Name>Erlass RR</Name><Code>Erlass_Regierungsrat</Code><SortierNr>5</SortierNr><Bemerkung>Erlass Regierungsrat</Bemerkung></SZ_Richtplan_V1.Stammdaten.Verfahrensstatus>
-    <SZ_Richtplan_V1.Stammdaten.Verfahrensstatus TID="139ee09c-356f-42c0-bdcd-0bcddedc70f3"><Name>Kenntnisnahme KR</Name><Code>Kenntnisnahme_Kantonsrat</Code><SortierNr>6</SortierNr><Bemerkung>Kenntnisnahme Kantonsrat</Bemerkung></SZ_Richtplan_V1.Stammdaten.Verfahrensstatus>
-    <SZ_Richtplan_V1.Stammdaten.Verfahrensstatus TID="332f3166-2d24-4a42-b370-fbab17f1d632"><Name>Genehmigung Bund</Name><Code>Genehmigung_Bund</Code><SortierNr>7</SortierNr><Bemerkung></Bemerkung></SZ_Richtplan_V1.Stammdaten.Verfahrensstatus>
+	<SZ_Richtplan_V1.Stammdaten.Verfahrensstatus TID="ad0cd385-c5eb-44bc-a005-6131c243a69e"><Name>Erlass RR nach RUVEKO</Name><Code>Erlass_RR_nach_RUVEKO</Code><SortierNr>6</SortierNr><Bemerkung>RUVEKO-Änderungen nach RR-Erlass</Bemerkung></SZ_Richtplan_V1.Stammdaten.Verfahrensstatus>
+    <SZ_Richtplan_V1.Stammdaten.Verfahrensstatus TID="139ee09c-356f-42c0-bdcd-0bcddedc70f3"><Name>Kenntnisnahme KR</Name><Code>Kenntnisnahme_Kantonsrat</Code><SortierNr>7</SortierNr><Bemerkung>Kenntnisnahme Kantonsrat</Bemerkung></SZ_Richtplan_V1.Stammdaten.Verfahrensstatus>
+    <SZ_Richtplan_V1.Stammdaten.Verfahrensstatus TID="332f3166-2d24-4a42-b370-fbab17f1d632"><Name>Genehmigung Bund</Name><Code>Genehmigung_Bund</Code><SortierNr>8</SortierNr><Bemerkung></Bemerkung></SZ_Richtplan_V1.Stammdaten.Verfahrensstatus>
   </SZ_Richtplan_V1.Stammdaten>
  </DATASECTION>
 </TRANSFER>
