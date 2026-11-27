@@ -17,10 +17,10 @@ Bei der Bewirtschaftung eines Themas gibt es Attribute, deren Werte nicht frei e
 (2024-02-21)
 | 2025-01-17
 | Unterschied zur Vorversion: Der Wert für die BID folgt neu dem Standard. 
-| https://raw.githubusercontent.com/ch-sz-geo/A084/c76e0d5f58182e4473d1c72f48dc913b7ff4e5cd/data/Stammdaten.xtf[*Datei*]
+| https://raw.githubusercontent.com/ch-sz-geo/A084/c63d423f52c3fa43edb5cf03d24120ff31a844dd/data/Stammdaten.xtf[*Datei*]
 | SZ_Richtplan_V1 +
 (2024-02-21)
 | 2000-01-01
 | Diese Datei enthält die erste Version der Stammdaten. Sie wurde aus der internen Dateiablage hochgeladen, damit die Historie über GitHub vorhanden ist. In dieser Dateiversion fehlt die Versionskennung bei der Stammdaten-BID. 
-| https://raw.githubusercontent.com/ch-sz-geo/A084/c76e0d5f58182e4473d1c72f48dc913b7ff4e5cd/data/Stammdaten.xtf[*Datei*]
+| https://raw.githubusercontent.com/ch-sz-geo/A084/0a89f51369169070329ff31ff157a24613a15d45/data/Stammdaten.xtf[*Datei*]
 |===
